@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06A9DB"
+    android:orientation="horizontal"
+    tools:context=".MainMenu">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.olyapasy.happydog.fragment.CategoryFragment"
+        android:layout_width="389dp"
+        android:layout_height="103dp"
+        android:background="#06A9DB"
+        app:layout_constraintBottom_toTopOf="@+id/chooseBreedTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chooseBreedTextView"
+        android:layout_width="223dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="112dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="          Choose breed "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:style="@android:style/Widget.TextView.PopupMenu" />
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.olyapasy.happydog.fragment.MainMenuFragment"
+        android:layout_width="0dp"
+        android:layout_height="353dp"
+        android:background="#06A9DB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseBreedTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06A9DB"
+    android:orientation="vertical"
+
+    tools:context=".SplashActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImage"
+        android:layout_width="391dp"
+        android:layout_height="381dp"
+        android:background="#06A9DB"
+        android:src="@drawable/dogpicture2"
+        app:layout_constraintBottom_toTopOf="@+id/breedsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/happyButton"
+        android:layout_width="323dp"
+        android:layout_height="46dp"
+        android:background="#FFFF"
+        android:text="How to make your dog happy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breedsButton" />
+
+    <Button
+        android:id="@+id/breedsButton"
+        android:layout_width="323dp"
+        android:layout_height="46dp"
+        android:background="#FFFF"
+        android:text="Dog breeds"
+        app:layout_constraintBottom_toTopOf="@+id/happyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImage" />
+
+</android.support.constraint.ConstraintLayout>
